@@ -10,7 +10,12 @@ This repository contains all the data and information about the 2 projects that 
 * Project Names: Financial Analytics & Budget Sales Analytics
 * Domain: Finance
 * Difficulty Level: Intermediate
-* Deliverables: Datasets, Project Report (Presentation), Python Codes Files, GitHub Documentation, 
+* Deliverables:
+  - Datasets used
+  - 2 Project timelines (Presentation)
+  - Project Report (Presentation)
+  - Python Codes Files
+  - GitHub Documentation
 
 # Project Details: 
 
@@ -19,6 +24,10 @@ This repository contains all the data and information about the 2 projects that 
 * ### Problem Statement:
 
 * ### Tools used:
+  - Microsoft Excel - For Initial Data Cleaning
+  - Python - Data Wrangling, Exploratory Data Analysis, Data Visualization
+  - Tableau - Dashboard
+  - Google Slides and Canva - Timeline Presentation and Project Report
 
 * ### Methodologies used:
 
