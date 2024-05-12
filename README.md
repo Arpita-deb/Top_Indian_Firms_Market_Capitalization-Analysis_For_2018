@@ -8,6 +8,8 @@ This repository contains all the data and information about the 2 projects that 
 * Timeline: 10-05-2024 to 10-06-2024
 * Number of Projects: 2
 * Project Names: Financial Analytics & Budget Sales Analytics
+* Domain: Finance
+* Difficulty Level: Intermediate
 * Deliverables: Datasets, Project Report (Presentation), Python Codes Files, GitHub Documentation, 
 
 # Project Details: 
