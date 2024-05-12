@@ -84,3 +84,14 @@ This repository contains all the data and information about the 2 projects that 
 
 
 # References:
+
+### For Project 1:
+
+* Datasets used:
+  - [Top 500 Companies in India](https://www.kaggle.com/datasets/nishankmagoo/top-500-companies-in-india)
+  - [ET Top 500 Indian Companies (2009-2021)](https://www.kaggle.com/datasets/ramjasmaurya/et-top-500-indian-companies-since-2009)
+  - [Nifty 500 fundamental statistics](https://www.kaggle.com/datasets/dhimananubhav/nifty-500-fundamental-statistics)
+* [Market Capitalization - Basics, Definition, How to Calculate](https://groww.in/p/market-capitalisation)
+* [Market Capitalization Basics: Large cap, Mid cap & Small cap companies](https://tradebrains.in/market-capitalization-in-indian-stock-market/)
+* [How companies are categorized by market capitalization?](https://finlib.in/amfi-companies-categorized/)
+
