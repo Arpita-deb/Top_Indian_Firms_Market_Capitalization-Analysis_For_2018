@@ -93,27 +93,27 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
        Market Share = Company's Quarterly Sales/Total Quarterly Sales of All Companies * 100
 
-2. **Sales Growth Rate**: This measures the rate at which a business is able to increase revenue from sales during a fixed period of time.
-
-       Sales Growth Rate = (Current Quarter Sales - Previous Quarter Sales)/Previous Quarter Sales *100
-   
-4. **Price-to-Sales Ratio (P/S)**: This is a valuation ratio that compares a company’s stock price to its revenues. It indicates the value that financial markets have placed on each dollar of a company’s sales or revenues.
-
-       P/S Ratio = Market Capitalization/Total Sales
-
-5. **Sales per Capita**: This is a measure of the average sales amount per person (or per head) in a certain group, such as the number of salespeople in a company.
+2. **Sales Yield**:  In finance, yield is the prospective return on an investment.
 
        Sales per Capita = Quarterly Sales/Market Capitalization
   
 * ### Data Cleaning:
 
-* ### Data Exploration: Explore the data to understand its characteristics and patterns. This involves using descriptive statistics and data visualization techniques.
+   I used Microsoft Excel and Alteryx for cleaning and transforming the data. In this phase I removed duplicate entries, corrected typographical errors, joined column from external dataset, organized the data by sorting and filtering, created numerical and categorical columns based on existing one. I've documented all the changes here in this [Changelog](https://docs.google.com/document/d/1lDhmjGJxXsieriydLpLRMFHGMSKQQsCbhuTJqJbyLkw/edit?usp=sharing). 
+
+* ### Data Exploration:
+
+  I explored the data to understand its characteristics and patterns using Alteryx and Microsoft Power BI. It involved using descriptive statistics and data visualization techniques.
   
-* ### Data Analysis: Perform the actual analysis based on the project’s objective. This could involve statistical analysis, machine learning, data mining, etc.
+* ### Data Analysis:
+
+  Perform the actual analysis based on the project’s objective. This could involve statistical analysis, machine learning, data mining, etc.
   
-* ### Interpretation of Results: Interpret the results of the analysis. Try to understand what the results mean in the context of the project’s objective.
+* ### Interpretation of Results:
+  Interpret the results of the analysis. Try to understand what the results mean in the context of the project’s objective.
   
-* ### Reporting: Prepare a report or a presentation to communicate the findings of the analysis. The report should be clear and concise, and it should be tailored to the audience’s level of expertise.
+* ### Reporting:
+  Prepare a report or a presentation to communicate the findings of the analysis. The report should be clear and concise, and it should be tailored to the audience’s level of expertise.
 
 ### Limitations of the project:
 
@@ -240,5 +240,3 @@ Extract various information such as Sales, budget, and variance. You can even co
   - [Nifty 500 fundamental statistics](https://www.kaggle.com/datasets/dhimananubhav/nifty-500-fundamental-statistics)
 * [Market Capitalization - Basics, Definition, How to Calculate](https://groww.in/p/market-capitalisation)
 * [Market Capitalization Basics: Large cap, Mid cap & Small cap companies](https://tradebrains.in/market-capitalization-in-indian-stock-market/)
-* [How companies are categorized by market capitalization?](https://finlib.in/amfi-companies-categorized/)
-
