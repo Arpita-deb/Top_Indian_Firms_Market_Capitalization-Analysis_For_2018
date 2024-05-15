@@ -25,14 +25,6 @@ This repository contains all the data and information about the 2 projects that 
 
 * ### Problem Statement: I am tasked to analyse the market competition for the management of the Fortune top 500 companies in India for Financial Year 2018 to provide better results.
 
-* ### Questions I want to find answers from this analysis:
-  
-  - Which company has the largest/smallest market share in terms of sales?
-  - How does market capitalization correlate with sales figures?
-  - Are there any outliers with disproportionately high/low sales for their market cap?
-  - What is the average market capitalization and sales in each industry segment?
-  - Which companies are showing consistent growth in sales over the quarters?
-
 * ### Tools used:
   - Microsoft Excel - For Initial Data Cleaning (Removing Typographic error)
   - Alteryx - Data Preparation, Join, Analysis
@@ -103,7 +95,19 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
 * ### Data Exploration:
 
-  I explored the data to understand its characteristics and patterns using Alteryx and Microsoft Power BI. It involved using descriptive statistics and data visualization techniques.
+  I explored the data to understand its characteristics and patterns using Alteryx and Microsoft Power BI. It involved using descriptive statistics and data visualization techniques. Here I want to find answers to questions such as -
+  - What is the average market capitalization and sales in each industry segment?
+  - Which company has the largest/smallest market share in terms of sales?
+  - How does market capitalization correlate with sales figures?
+  - Are there any outliers with disproportionately high/low sales for their market cap?
+  - What is the distribution of market capitalization across different categories of capitalization (e.g., large-cap, mid-cap, small-cap)?
+  - How does the market capitalization vary across different industries?
+  - What is the correlation between market capitalization and quarterly sales?
+  - Which industries have the highest average market capitalization?
+  - Are there any outliers in terms of market capitalization within specific industries?
+  - How does the rank of companies based on market capitalization compare to their rank based on quarterly sales?
+  - Can we identify any industries that have consistently high rankings in both market capitalization and quarterly sales?
+  - How does the distribution of market capitalization differ between industries?
   
 * ### Data Analysis:
 
