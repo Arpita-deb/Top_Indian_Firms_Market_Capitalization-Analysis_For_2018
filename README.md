@@ -1,4 +1,4 @@
-# Unified Mentor Internship Project Works
+![image](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/4fb20f1b-4830-479f-a49c-6063a33b5788)![image](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/ef63aee6-53cc-4865-9c6e-5e8631deb18a)# Unified Mentor Internship Project Works
 
 # Introduction:
 This repository contains all the data and information about the 2 projects that I completed as an intern in Unified Mentor from 10-05-2024 to 10-06-2024.
@@ -91,27 +91,66 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
   
 * ### Data Cleaning:
 
-   I used Microsoft Excel and Alteryx for cleaning and transforming the data. In this phase I removed duplicate entries, corrected typographical errors, joined column from external dataset, organized the data by sorting and filtering, created numerical and categorical columns based on existing one. I've documented all the changes here in this [Changelog](https://docs.google.com/document/d/1lDhmjGJxXsieriydLpLRMFHGMSKQQsCbhuTJqJbyLkw/edit?usp=sharing). 
+   I used Microsoft Excel and Alteryx for cleaning and transforming the data. In this phase I removed duplicate entries, corrected typographical errors, joined column from external dataset, organized the data by sorting and filtering, created numerical and categorical columns based on existing one. I've documented all the changes here in this [Changelog](https://docs.google.com/document/d/1lDhmjGJxXsieriydLpLRMFHGMSKQQsCbhuTJqJbyLkw/edit?usp=sharing).
+
+  After cleaning and transforming the dataset, I end up with this dataset -
+
+  | Column name | Datatype | Type | Description |
+  | :--- | :--- | :--- | :--- |
+  | Rank | integer | NON NULLABLE | Ranking based on Market Capitalization for each company |
+  | CompanyID | integer | NON NULLABLE | Unique id for each company |
+  | Company Name | string | NON NULLABLE | Name of the Company |
+  | Market Capitalization (in Crore) | double | NON NULLABLE | Market Capitalization for each company in Crores INR |
+  | Quarterly Sales (in Crore) | double | NON NULLABLE | Quarterly Sales for each company in Crores INR |
+  | industry | string | NON NULLABLE | Sector of operation |
+  | Market Share | double | NON NULLABLE | % of total sales generated |
+  | Sales Yield | double | NON NULLABLE | Return on Investment |
+  | Category | string | NON NULLABLE | Category based on Market Cap(Small, Mid, Large) |
 
 * ### Data Exploration:
 
   I explored the data to understand its characteristics and patterns using Alteryx and Microsoft Power BI. It involved using descriptive statistics and data visualization techniques. Here I want to find answers to questions such as -
   - What is the average market capitalization and sales in each industry segment?
-  - Which company has the largest/smallest market share in terms of sales?
+
+| Company | Average Quarterly sales (in Crore) | Average Market Capitalization (in Crore) |
+| :--- | :--- | :--- |
+| IT | 5498.9 | 64582.6 | 
+| Energy | 13132.1 | 55552.8 | 
+| Automobile | 6163.5 | 41320.7 |
+
+  - Which company has the largest/smallest market share?
+
+Reliance Industries Limited has the largest market share (32.8%) closely followed by Tata Consultancy Limited (31.7%) and HDFC Bank Limited (27.2%).
+
+National Fertilizers Limited has the smallest market share (0.16%).
+
   - How does market capitalization correlate with sales figures?
+
   - Are there any outliers with disproportionately high/low sales for their market cap?
-  - What is the distribution of market capitalization across different categories of capitalization (e.g., large-cap, mid-cap, small-cap)?
-  - How does the market capitalization vary across different industries?
-  - What is the correlation between market capitalization and quarterly sales?
-  - Which industries have the highest average market capitalization?
+ 
   - Are there any outliers in terms of market capitalization within specific industries?
+
+  - What is the distribution of market capitalization across different categories of capitalization (e.g., large-cap, mid-cap, small-cap)?
+
+| Category | Number of Companies| Average Market Capitalization (in Crore) |
+| :--- | :--- | :--- |
+| Large Cap | 107 | 97926.9 |
+| Mid Cap | 156	| 15479.5 |
+| Small Cap | 224 | 5023.1 |
+
+  - How does the market capitalization vary across different industries?
+
+The data shows Financial Service, Consumer Goods, Energy and IT industries jointly occupy more than 60% of the total market capitalization. Whereas Media & Entertainment, Textiles, Logistics, Fertilisers & Pesticides, Healthcare Services, Agriculture, Paper industries show less than 1% of total capitalization.
+ 
+
+  - Which industries have the highest average market capitalization?
+
+ Information Technology (IT) dominates in terms of highest average market capitalization, whereas Financial Services are on top in terms of total market capitalization for 2018.
+
   - How does the rank of companies based on market capitalization compare to their rank based on quarterly sales?
-  - Can we identify any industries that have consistently high rankings in both market capitalization and quarterly sales?
-  - How does the distribution of market capitalization differ between industries?
   
 * ### Data Analysis:
 
-  Perform the actual analysis based on the project’s objective. This could involve statistical analysis, machine learning, data mining, etc.
   
 * ### Interpretation of Results:
   Interpret the results of the analysis. Try to understand what the results mean in the context of the project’s objective.
