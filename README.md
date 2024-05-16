@@ -111,42 +111,30 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
   I explored the data to understand its characteristics and patterns using Alteryx and Microsoft Power BI. It involved using descriptive statistics and data visualization techniques. Here I want to find answers to questions such as -
 
-   - Descriptive Statistics of Numerical Columns
+![A 1 1](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/a9e84719-c9b8-4125-a9f6-9226b5006811)
 
+![A 1 1 2](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/ad8cbd23-eb3a-4677-a859-864b8e04fd44)
 
-   - What is the average market capitalization and sales in each industry segment?
+![A 1 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/63cecb61-ff01-4d53-a647-f1166f853e43)
 
-| Company | Average Quarterly sales (in Crore) | Average Market Capitalization (in Crore) |
-| :--- | :--- | :--- |
-| IT | 5498.9 | 64582.6 | 
-| Energy | 13132.1 | 55552.8 | 
-| Automobile | 6163.5 | 41320.7 |
+![1 3](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/125925df-11bb-49fc-a15b-21b1559fce3e)
 
-  - Which company has the largest/smallest market share?
+![A1 4](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/b4928239-3907-4468-9c54-c897bb006937)
 
-Reliance Industries Limited has the largest market share (32.8%) closely followed by Tata Consultancy Limited (31.7%) and HDFC Bank Limited (27.2%).
+![A 1 5](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/64f72ae4-4045-4243-84e2-7ab16afe3329)
 
-National Fertilizers Limited has the smallest market share (0.16%).
+![A 1 6](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/31e28f34-6494-40ca-bb44-9608329fe3b4)
 
-  - How does market capitalization correlate with sales figures?
+![Boxplot](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/8a4b7889-595d-4503-a3db-c56661efc2ed)
 
-  - Are there any outliers with disproportionately high/low sales for their market cap?
- 
-  - Are there any outliers in terms of market capitalization within specific industries?
+![A 1 7](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/53c8bb6b-7497-4869-80bf-e43286a08217)
 
-  - What is the distribution of market capitalization across different categories of capitalization (e.g., large-cap, mid-cap, small-cap)?
+![A 1 8](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/e679db35-f611-402c-a37d-4e2818d747a2)
 
-  - How does the market capitalization vary across different industries?
+![A 1 9 1](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/ce1a8919-01b3-4b6a-a346-d1f61b3f89b7)
 
-The data shows Financial Service, Consumer Goods, Energy and IT industries jointly occupy more than 60% of the total market capitalization. Whereas Media & Entertainment, Textiles, Logistics, Fertilisers & Pesticides, Healthcare Services, Agriculture, Paper industries show less than 1% of total capitalization.
- 
+![A 1 9 2](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/0faf7415-61b9-45c4-b5ad-d3cd7030c415)
 
-  - Which industries have the highest average market capitalization?
-
- Information Technology (IT) dominates in terms of highest average market capitalization, whereas Financial Services are on top in terms of total market capitalization for 2018.
-
-  - How does the rank of companies based on market capitalization compare to their rank based on quarterly sales?
-  
 * ### Data Analysis:
 
   
