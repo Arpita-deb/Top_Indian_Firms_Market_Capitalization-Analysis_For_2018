@@ -1,4 +1,4 @@
-![image](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/4fb20f1b-4830-479f-a49c-6063a33b5788)![image](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/ef63aee6-53cc-4865-9c6e-5e8631deb18a)# Unified Mentor Internship Project Works
+# Unified Mentor Internship Project Works
 
 # Introduction:
 This repository contains all the data and information about the 2 projects that I completed as an intern in Unified Mentor from 10-05-2024 to 10-06-2024.
@@ -110,7 +110,11 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 * ### Data Exploration:
 
   I explored the data to understand its characteristics and patterns using Alteryx and Microsoft Power BI. It involved using descriptive statistics and data visualization techniques. Here I want to find answers to questions such as -
-  - What is the average market capitalization and sales in each industry segment?
+
+   - Descriptive Statistics of Numerical Columns
+
+
+   - What is the average market capitalization and sales in each industry segment?
 
 | Company | Average Quarterly sales (in Crore) | Average Market Capitalization (in Crore) |
 | :--- | :--- | :--- |
@@ -131,12 +135,6 @@ National Fertilizers Limited has the smallest market share (0.16%).
   - Are there any outliers in terms of market capitalization within specific industries?
 
   - What is the distribution of market capitalization across different categories of capitalization (e.g., large-cap, mid-cap, small-cap)?
-
-| Category | Number of Companies| Average Market Capitalization (in Crore) |
-| :--- | :--- | :--- |
-| Large Cap | 107 | 97926.9 |
-| Mid Cap | 156	| 15479.5 |
-| Small Cap | 224 | 5023.1 |
 
   - How does the market capitalization vary across different industries?
 
