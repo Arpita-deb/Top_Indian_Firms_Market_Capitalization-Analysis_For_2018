@@ -98,9 +98,9 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
        Market Share = Company's Quarterly Sales/Total Quarterly Sales of All Companies * 100
 
-5. **Sales Yield**:  In finance, yield is the prospective return on an investment.
+5. **Sales Yield**:  In the context of a company's market capitalization, the sales yield metric can be interpreted as the **Market Cap to Sales Ratio**. This ratio is used to determine how much price investors are willing to pay for every unit of a company's sales. 
 
-       Sales per Capita = Quarterly Sales/Market Capitalization
+       Sales Yield = Market Capitalization/Total Sales
   
 ## Data Cleaning:
 
@@ -159,25 +159,39 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 4. A scatterplot comparing Quarterly Sales and Market Cap ranks showed minimal positive correlation, with only 31 companies ranking under 50 in both categories. This gets more complicated as we've ranked the companies in descending order of their market cap and sales, which means companies ranking higher in market cap (i.e. closer to 1) also have a higher sales rank (i.e. closer to 1). This means that as the rank of a company by market cap increases there tends to be a tendency for its rank by quarterly sales to also increase. However, correlation does not imply causation. This means that while there is a relationship between market cap ranks and quarterly sales ranks, it doesn't necessarily mean that one directly causes another. Other factors could influence both market cap and sales independently.
    
 5. This exploratory analysis suggests a potential industry link to market cap, which we'll verify by doing a hypothesis testing.
-
-## Data Analysis:
-
-**Hypothesis Testing**
-
-
-
   
 ## Interpretation of Results:
+1. **Market Capitalization Metrics:**
+   - **Importance:** Market capitalization is a crucial metric for assessing a company's competitiveness.
+   - **Categorization:** We grouped companies into three distinct categories based on their market cap.
+   - **Large Cap Companies:** Approximately 21% of all companies fall into this category, with a market cap exceeding ₹28,000 Crore INR.
+   - **Notable Players:** Reliance Industries Ltd, Tata Consultancy Limited, and HDFC Bank lead the way, generating over ₹500,000 Crore in market capitalization.
+   - **Competitiveness Indicator:** Larger market caps often indicate a company's ability to influence the market, attract investors, and fund operations.
 
-  Interpret the results of the analysis. Try to understand what the results mean in the context of the project’s objective.
-  
+2. **Market Share Insights:**
+   - **Leadership Indicators:** In the Indian business landscape of 2018, companies like Reliance Ltd and Tata Consultancy Group held significant market share.
+   - **Market Dominance:** High market share suggests market leadership, a strong brand, and considerable influence over prices and trends.
+   - **Competitiveness Spectrum:** Markets with a few dominant players are less competitive, while those with many smaller players are more competitive.
+
+3. **Industry-Specific Analysis:**
+   - **Top Performers:** In 2018, IT, Energy, Automobile, Metal, Telecom, and Logistics industries stood out.
+   - **Market Cap Breakdown:** These sectors were predominantly monopolized by large and mid-cap companies.
+
+4. **Emerging Small Caps:**
+   - **Fast Risers:** Despite the dominance of large and mid-cap companies, 46% of analyzed firms were Small Caps.
+   - **Untapped Potential:** Industries like Agriculture, Paper, Healthcare, Textile, Services, Construction, and Chemicals show promising growth.
+
+
 ## Reporting:
-  Prepare a report or a presentation to communicate the findings of the analysis. The report should be clear and concise, and it should be tailored to the audience’s level of expertise.
+
 
 ## Limitations of the project:
 
 1. The dataset was incomplete with only 488 rows with 1 duplicate entry instead of 500.
-2. The data did not contain other numeric columns such as Revenue, Quarterly sales for different quarters, Market cap from previous years etc which could have allowed us to perform more advanced analysis such as Sales Efficiency Analysis, Growth Analysis, Correlation and Regression Analysis, Predictive Analysis etc.
+2. The ambiguous nature of Quarterly Sales column restricted further calculation.
+3. The data did not contain other numeric columns such as Revenue, Quarterly sales for different quarters, Market cap from previous years etc which could have allowed us to perform more advanced analysis such as Sales Efficiency Analysis, Growth Analysis, Correlation and Regression Analysis, Predictive Analysis etc.
+4. Since the data is not normally distributed, I could not perform Hypothesis Test (ANOVA) to check whether there was any affect of Industry 
+in Market Capitalization.
 
 ## Future Ideas:
 
