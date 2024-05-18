@@ -152,13 +152,23 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
 1. The analysis reveals outliers in Quarterly Sales and Market Capitalization among 487 companies. The median market cap is ₹28,784 crore, with the highest at ₹5,83,436 crore, indicating significant variance. The top three companies by market cap in 2018 were Reliance Industries, Tata Consultancy Services, and HDFC Bank, holding market shares of 32.85%, 31.74%, and 27.19%, respectively.
 
+![2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/d970ea44-85e6-493e-9067-7df69c05189b)
+
 2. The IT, Energy, and Automobile sectors led in Average Market Capitalization, while the Energy, Metals, and Automobile sectors topped Average Quarterly Sales. Notable outliers included Reliance Industries from Energy and Tata Consultancy Services from IT.
+
+![1](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/60a3da89-95fd-49cd-92e6-681aa9d40564)
 
 3. Market capitalization correlated moderately with sales, with a coefficient of 0.5868. Companies were classified into large (market cap > ₹28,000 crore), mid (market cap between ₹8,000 crore and ₹28,000 crore), and small (market cap < ₹8,000 crore) categories, with small caps being the majority.
 
-4. A scatterplot comparing Quarterly Sales and Market Cap ranks showed minimal positive correlation, with only 31 companies ranking under 50 in both categories. This gets more complicated as we've ranked the companies in descending order of their market cap and sales, which means companies ranking higher in market cap (i.e. closer to 1) also have a higher sales rank (i.e. closer to 1). This means that as the rank of a company by market cap increases there tends to be a tendency for its rank by quarterly sales to also increase. However, correlation does not imply causation. This means that while there is a relationship between market cap ranks and quarterly sales ranks, it doesn't necessarily mean that one directly causes another. Other factors could influence both market cap and sales independently.
-   
-5. This exploratory analysis suggests a potential industry link to market cap, which we'll verify by doing a hypothesis testing.
+![3](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/82e67535-11ac-47e5-827b-0d0b497551c2)
+
+4. A Further breakdown of total Market Share by industries and categories reveal that the top performing industries were dominated by Large Cap Companies, which also answers their high market share. However, there are some emerging industries dominated by Mid and Small Cap companies which reveals potential for these small and mid cap companies to emerge and thrive.
+
+![4](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/d8b48a8a-6ab2-4cb5-937c-ea143f0e23f4)
+
+5. A scatterplot comparing Quarterly Sales and Market Cap ranks showed minimal positive correlation, with only 31 companies ranking under 50 in both categories. This gets more complicated as we've ranked the companies in descending order of their market cap and sales, which means companies ranking higher in market cap (i.e. closer to 1) also have a higher sales rank (i.e. closer to 1). This means that as the rank of a company by market cap increases there tends to be a tendency for its rank by quarterly sales to also increase. However, correlation does not imply causation. This means that while there is a relationship between market cap ranks and quarterly sales ranks, it doesn't necessarily mean that one directly causes another. Other factors could influence both market cap and sales independently.
+
+![5](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/ae636043-4790-4f3d-b919-277c86ae707f)
   
 ## Interpretation of Results:
 1. **Market Capitalization Metrics:**
@@ -180,10 +190,6 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 4. **Emerging Small Caps:**
    - **Fast Risers:** Despite the dominance of large and mid-cap companies, 46% of analyzed firms were Small Caps.
    - **Untapped Potential:** Industries like Agriculture, Paper, Healthcare, Textile, Services, Construction, and Chemicals show promising growth.
-
-
-## Reporting:
-
 
 ## Limitations of the project:
 
