@@ -1,30 +1,35 @@
-# Unified Mentor Internship Project Works
+# Unified Mentor Internship Project 1: Financial Analytics
 
-# Introduction:
+# About the Internship:
 This repository contains all the data and information about the 2 projects that I completed as an intern in Unified Mentor from 10-05-2024 to 10-06-2024.
 
-# Internship Details:
-
+* Organization: Unified Mentor
+* Role: Data Analyst Intern
 * Timeline: 10-05-2024 to 10-06-2024
 * Number of Projects: 2
 * Project Names: Financial Analytics & Budget Sales Analytics
-* Deliverables:
+
+# About the Project:
+
+## Project Name: Financial Analytics
+
+## Introduction:
+
+## Domain: 
+ - Finance
+
+## Difficulty Level: 
+ - Intermediate
+
+## Problem Statement: 
+- I am tasked to analyse the market competition for the management of 500 companies in India for Financial Year 2018 to provide better results and insights.
+
+## Deliverables:
   - Datasets used
-  - 2 Project timelines (Presentation)
   - Alteryx Workflows
   - Project Report (Presentation)
-  - Python Codes Files
+  - Power BI Dashboard
   - GitHub Documentation
-
-# Project Details: 
-
-# Project 1. Financial Analytics
-
-## Domain: Finance
-
-## Difficulty Level: Intermediate
-
-## Problem Statement: I am tasked to analyse the market competition for the management of 500 companies in India for Financial Year 2018 to provide better results and insights.
 
 ## Tools used:
   - Microsoft Excel - For Initial Data Cleaning (Removing Typographic error)
@@ -148,6 +153,10 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
 ![A 1 9 2](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/0faf7415-61b9-45c4-b5ad-d3cd7030c415)
 
+![A 1 10 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/aba5bdd1-d784-4587-9a36-4eced5fb188e)
+
+![A 1 10 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/e229207d-eeec-483a-8df6-acbe7752c8ee)
+
 * **Summary of Exploratory Data Analysis:**
 
 1. The analysis reveals outliers in Quarterly Sales and Market Capitalization among 487 companies. The median market cap is ₹28,784 crore, with the highest at ₹5,83,436 crore, indicating significant variance. The top three companies by market cap in 2018 were Reliance Industries, Tata Consultancy Services, and HDFC Bank, holding market shares of 32.85%, 31.74%, and 27.19%, respectively.
@@ -219,128 +228,7 @@ in Market Capitalization.
    4. Trend Analysis - to assess sales growth rates, market share changes etc to identify emerging trends and opportunities.
    5. SWOT Analysis -  to systematically evaluate internal and external factors affecting competitiveness.
 
-# References:
-
-* Datasets used:
-  - [Top 500 Companies in India](https://www.kaggle.com/datasets/nishankmagoo/top-500-companies-in-india)
-  - [ET Top 500 Indian Companies (2009-2021)](https://www.kaggle.com/datasets/ramjasmaurya/et-top-500-indian-companies-since-2009)
-  - [Nifty 500 fundamental statistics](https://www.kaggle.com/datasets/dhimananubhav/nifty-500-fundamental-statistics)
-* [Market Capitalization - Basics, Definition, How to Calculate](https://groww.in/p/market-capitalisation)
-* [Market Capitalization Basics: Large cap, Mid cap & Small cap companies](https://tradebrains.in/market-capitalization-in-indian-stock-market/)
-* [Market Cap To Sales Ratio: Why It's Important? - StockEdge Blog](https://blog.stockedge.com/market-cap-to-sales-ratio/)
-
-
-
-
-# Project 2. Budget Sales Analytics
-
-* ### Domain: Retail & Sales
-
-* ### Difficulty Level: Advanced
-
-* ### Problem Statement:
-Our "Domain Sale" process is structured to help potential buyers purchase the domain they want immediately without the hassle of contacting the seller directly. A seller lists a domain for sale at a specific price in our Marketplace. An interested buyer sees this domain for sale and decides to buy it.
-Extract various information such as Sales, budget, and variance. You can even compare sales and budgets with various attributes. Extract necessary information about Products and Customers. Make the necessary dashboard with the best you can extract from the data. Use various visualization and features and make the best dashboard. Find key metrics and factors and show the meaningful relationships between attributes
-
-* ### Questions I want to find answers from this analysis:
-  
-  - 
-
-* ### Tools used:
-  - Microsoft Excel - For Initial Data Cleaning (Removing Typographic error)
-  - Alteryx - Data Preparation, Join, Analysis
-  - Power BI - Data Visualization & Dashboard
-  - Google Slides and Canva - Timeline Presentation and Project Report
-
-* ### Methodologies used:
-  - Data Profiling
-  - Data Cleaning
-  - Data Wrangling
-  - Exploratory Data Analysis
-  - Data Visualization
-  - Documentation
-
-* ### Data Description:
-  
-1. **[Adventure_Works_Database]()**
-
-| Column name | Datatype | Type | Description |
-| :--- | :--- | :--- | :--- |
-| ProductKey | integer | NON NULLABLE| Index of the rows |
-| OrderDate | string | NON NULLABLE | Name of the Companies |
-| ShipDate | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| CustomerKey | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| PromotionKey | integer | NON NULLABLE| Index of the rows |
-| SalesTerritoryKey | string | NON NULLABLE | Name of the Companies |
-| SalesOrderNumber | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| SalesOrderLineNumber | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| OrderQuantity | integer | NON NULLABLE| Index of the rows |
-| UnitPrice | string | NON NULLABLE | Name of the Companies |
-| TotalProductCost | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| SalesAmount | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| TaxAmt | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| StandardCost | integer | NON NULLABLE| Index of the rows |
-| List Price | string | NON NULLABLE | Name of the Companies |
-| diif std cost | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| diff list price | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-
-2. **[Budget]()**
-														
-| Column name | Datatype | Type | Description |
-| :--- | :--- | :--- | :--- |
-| Category | integer | NON NULLABLE| Index of the rows |
-| Subcategory | string | NON NULLABLE | Name of the Companies |
-| ProductName | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| Jan, 2016 | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| Feb, 2016	 | integer | NON NULLABLE| Index of the rows |
-| Mar, 2016 | string | NON NULLABLE | Name of the Companies |
-| Apr, 2016 | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| May, 2016 | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| Jun, 2016 | integer | NON NULLABLE| Index of the rows |
-| Jul, 2016 | string | NON NULLABLE | Name of the Companies |
-| Aug, 2016 | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| Sep, 2016 | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| Oct, 2016 | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| Nov, 2016 | double | NON NULLABLE | Market Capitalization for each company in Crores |
-| Dec, 2016 | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-| Grand Total | double | NON NULLABLE | Quarterly Sales for each company in Crores |
-
-* ### Data Cleaning:
-
-* ### Data Exploration: Explore the data to understand its characteristics and patterns. This involves using descriptive statistics and data visualization techniques.
-  
-* ### Data Analysis: Perform the actual analysis based on the project’s objective. This could involve statistical analysis, machine learning, data mining, etc.
-  
-* ### Interpretation of Results: Interpret the results of the analysis. Try to understand what the results mean in the context of the project’s objective.
-  
-* ### Reporting: Prepare a report or a presentation to communicate the findings of the analysis. The report should be clear and concise, and it should be tailored to the audience’s level of expertise.
-
-### Limitations of the project:
-
-### Future Ideas:
-
-1. Define the Objective: Clearly define what you want to achieve with this data analysis project. This could be a business goal or a research question.
-
-2. Data Collection: Identify the necessary data and collect it. This could involve gathering data from various sources such as databases, APIs, web scraping, surveys, etc.
- 
- * Data Description:
-     
-3. Data Cleaning: Clean the collected data by handling missing values, outliers, incorrect data, etc. This step is crucial as the quality of data affects the outcome of the analysis.
-  
-4. Data Exploration: Explore the data to understand its characteristics and patterns. This involves using descriptive statistics and data visualization techniques.
-  
-5. Data Analysis: Perform the actual analysis based on the project’s objective. This could involve statistical analysis, machine learning, data mining, etc.
-  
-6. Interpretation of Results: Interpret the results of the analysis. Try to understand what the results mean in the context of the project’s objective.
-  
-7. Reporting: Prepare a report or a presentation to communicate the findings of the analysis. The report should be clear and concise, and it should be tailored to the audience’s level of expertise.
-  
-8. Review and Refinement: Based on feedback, you may need to refine your analysis or explore other aspects of the data.
-
-
-# References:
-
-### For Project 1:
+## References:
 
 * Datasets used:
   - [Top 500 Companies in India](https://www.kaggle.com/datasets/nishankmagoo/top-500-companies-in-india)
