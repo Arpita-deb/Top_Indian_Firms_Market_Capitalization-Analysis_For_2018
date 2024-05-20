@@ -213,12 +213,12 @@ However, correlation does not imply causation. This means that while there is a 
 
 1. In order to analyze competition among companies one can collect these data -
 
-  - Market Research Data including information about industries,market trends, customer preferences and demographics.
-  - Financial statement such as income, balance sheets, cash flow statements to provide insights into a company's profitability, liquidity and financial health.
-  - Market Share Data within specific sector or region.
-  - Details about products and services offered by each competitor, including pricing strategies, product features and customer value propositions.
-  - Customer data including customer behavior, satisfaction levels and loyalty.
-  - Marketing and sales strategies, distribution campaigns, sales tactics and promotional activities to understand how competitors attract and retain customers. 
+   - Market Research Data including information about industries,market trends, customer preferences and demographics.
+   - Financial statement such as income, balance sheets, cash flow statements to provide insights into a company's profitability, liquidity and financial health.
+   - Market Share Data within specific sector or region.
+   - Details about products and services offered by each competitor, including pricing strategies, product features and customer value propositions.
+   - Customer data including customer behavior, satisfaction levels and loyalty.
+   - Marketing and sales strategies, distribution campaigns, sales tactics and promotional activities to understand how competitors attract and retain customers. 
 
 2. Compare various metrics such as revenue, profit margins, return on investment (ROI), debt levels across competitors to reveal strengths and weaknesses.
 
