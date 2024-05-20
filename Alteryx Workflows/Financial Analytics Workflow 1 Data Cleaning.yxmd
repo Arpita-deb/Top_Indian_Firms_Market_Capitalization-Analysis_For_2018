@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1111" y="114" width="336" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This output data set contains no industry data either because the company names were written differently than the NIFTY data set or there are no records in NIFTY data set. So I need to manually enter the industries and then join this data with the original data.</Text>
+          <Font name="Arial" size="9" style="0" />
+          <TextColor name="White" />
+          <FillColor r="43" g="162" b="129" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="907" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Company Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="company" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Company ID" selected="False" input="Right_" />
+                <SelectField field="Right_company" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Joining to add industry column</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1579" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Final dataset with industry column</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="56" y="54" width="720" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Project 1: Financial Analytics 
+Work flow 1: Data Cleaning
+Dated: 13-05-2024
+Created by: Arpita Deb
+Methodologies used: Data Cleansing, Sorting, Joining, Filtering for duplicates, Union
+Result: A cleaned data set with 5 columns - CompanyID, Company Name, Market Capitalization (in Crore), Quarterly Sales (in Crore) and Industry</Text>
+          <Font name="Arial" size="9.75" style="1" />
+          <TextColor name="White" />
+          <FillColor r="47" g="81" b="159" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1039" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Market Capitalization (in Crore)</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-05-14 10:52:33</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>289497.37</Operand>
+              <StartDate>2024-05-14 10:52:33</StartDate>
+              <EndDate>2024-05-14 10:52:33</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filtering to remove a duplicate entry</AnnotationText>
+          <DefaultAnnotationText>[Market Capitalization (in Crore)] = 289497.37</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2142" y="221" width="146" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output 2</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output 2</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2167" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Cleaned Finance Analytics data.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>RemoveFile</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Cleaned Finance Analytics data output</AnnotationText>
+              <DefaultAnnotationText>Cleaned Finance Analytics data.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1698" y="221" width="377" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Cleaning 2</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Cleaning 2</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings>
+            <Position x="1723" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">""</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">title</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Changing industry case</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1843" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Company Name" order="Ascending" />
+                <Field field="Market Capitalization (in Crore)" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Sorting the results by company and market capitalization</AnnotationText>
+              <DefaultAnnotationText>Company Name - Ascending
+Market Capitalization (in Crore) - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1951" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>CompanyID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Adding a unique Company ID</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1314" y="233" width="137" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input 2</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input 2</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1339" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Company with industry edited.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Company with industries</AnnotationText>
+              <DefaultAnnotationText>Company with industry edited.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Company Name" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Company with industry edited.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Market Capitalization (in Crore)" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Company with industry edited.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Quarterly sales (in Crore)" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Company with industry edited.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Industry" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Company with industry edited.xlsx|||`Sheet1$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1110" y="233" width="154" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output 1</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output 1</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1135" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Company with no industry.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>RemoveFile</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Company with no industries</AnnotationText>
+              <DefaultAnnotationText>Company with no industry.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="330" y="245" width="437" height="372" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Cleaning 1</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Cleaning 1</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="355" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="S.No." selected="False" />
+                <SelectField field="Name" selected="True" rename="Company Name" />
+                <SelectField field="Mar Cap - Crore" selected="True" rename="Market Capitalization (in Crore)" />
+                <SelectField field="Sales Qtr - Crore" selected="True" rename="Quarterly sales (in Crore)" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Checking datatype &amp; changing column names</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings>
+            <Position x="499" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Company Name"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">title</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Removing Write spaces from Company name</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="631" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Company Name" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Sorting by Company Name in Ascending order</AnnotationText>
+              <DefaultAnnotationText>Company Name - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="355" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="index" selected="False" />
+                <SelectField field="industry" selected="True" rename="Industry" />
+                <SelectField field="symbol" selected="False" />
+                <SelectField field="category" selected="False" />
+                <SelectField field="market_cap" selected="False" />
+                <SelectField field="current_value" selected="False" />
+                <SelectField field="high_52week" selected="False" />
+                <SelectField field="low_52week" selected="False" />
+                <SelectField field="book_value" selected="False" />
+                <SelectField field="price_earnings" selected="False" />
+                <SelectField field="dividend_yield" selected="False" />
+                <SelectField field="roce" selected="False" />
+                <SelectField field="roe" selected="False" />
+                <SelectField field="sales_growth_3yr" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Selecting the required columns only</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="511" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="company" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Sorting by Company name in Ascending Order</AnnotationText>
+              <DefaultAnnotationText>company - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="643" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>Company ID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Adding a unique Company ID</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="245" width="157" height="341" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input 1</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input 1</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Financial Analytics data - Copy.xlsx|||`Financial Analytics data - Copy$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Original Company Data</AnnotationText>
+              <DefaultAnnotationText>Original Company Data</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="S.No." source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Financial Analytics data - Copy.xlsx|||`Financial Analytics data - Copy$`" type="Double" />
+                <Field name="Name" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Financial Analytics data - Copy.xlsx|||`Financial Analytics data - Copy$`" type="V_String" />
+                <Field name="Mar Cap - Crore" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Financial Analytics data - Copy.xlsx|||`Financial Analytics data - Copy$`" type="Double" />
+                <Field name="Sales Qtr - Crore" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\Financial Analytics data - Copy.xlsx|||`Financial Analytics data - Copy$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>NIFTY Data</AnnotationText>
+              <DefaultAnnotationText>NIFTY_500_Stats.xlsx
+Query=`nifty_500_stats$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="index" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="company" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="V_String" />
+                <Field name="industry" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="V_String" />
+                <Field name="symbol" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="V_String" />
+                <Field name="category" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="V_String" />
+                <Field name="market_cap" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="current_value" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="high_52week" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="low_52week" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="book_value" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="price_earnings" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="dividend_yield" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="roce" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="roe" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+                <Field name="sales_growth_3yr" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 1 Financial Analytics\Financial Analytics Dataset\NIFTY_500_Stats.xlsx|||`nifty_500_stats$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input2" />
+    </Connection>
+    <Connection name="Companies with industry column from JOIN">
+      <Origin ToolID="31" Connection="False" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="Companies with industry after manually entering the industries">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output26" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output26" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Financial Analytics Workflow 1 Data Cleaning</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="97aa68ca-e0c7-4915-b204-18aacbb2a4c2" />
+      <Telemetry>
+        <PreviousWorkflowId value="e31d69ad-54af-4e02-a356-3560a25d15d9" />
+        <OriginWorkflowId value="ab7797a7-c754-4962-b9eb-8775db5868af" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
