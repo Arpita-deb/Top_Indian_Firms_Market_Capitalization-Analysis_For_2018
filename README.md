@@ -213,21 +213,21 @@ However, correlation does not imply causation. This means that while there is a 
 
 1. In order to analyze competition among companies one can collect these data -
 
-   1. Market Research Data including information about industries,market trends, customer preferences and demographics.
-   2. Financial statement such as income, balance sheets, cash flow statements to provide insights into a company's profitability, liquidity and financial health.
-   3. Market Share Data within specific sector or region.
-   4. Details about products and services offered by each competitor, including pricing strategies, product features and customer value propositions.
-   5. Customer data including customer behavior, satisfaction levels and loyalty.
-   6. Marketing and sales strategies, distribution campaigns, sales tactics and promotional activities to understand how competitors attract and retain customers. 
+  - Market Research Data including information about industries,market trends, customer preferences and demographics.
+  - Financial statement such as income, balance sheets, cash flow statements to provide insights into a company's profitability, liquidity and financial health.
+  - Market Share Data within specific sector or region.
+  - Details about products and services offered by each competitor, including pricing strategies, product features and customer value propositions.
+  - Customer data including customer behavior, satisfaction levels and loyalty.
+  - Marketing and sales strategies, distribution campaigns, sales tactics and promotional activities to understand how competitors attract and retain customers. 
 
 2. Compare various metrics such as revenue, profit margins, return on investment (ROI), debt levels across competitors to reveal strengths and weaknesses.
 
 3. Perform more advanced data analysis techniques e.g., -
-   1. Correlation Analysis - to help undestand relation between two or more variables.
-   2. Regression Analysis - to predict one or more independent variables (e.g., pricing, promotion efforts) on a dependent variable (e.g., sales revenue, market share etc).
-   3. Cluster Analysis - to group competitors based on similar attributes such as market segments, product features or customer demographics.
-   4. Trend Analysis - to assess sales growth rates, market share changes etc to identify emerging trends and opportunities.
-   5. SWOT Analysis -  to systematically evaluate internal and external factors affecting competitiveness.
+   - Correlation Analysis - to help undestand relation between two or more variables.
+   - Regression Analysis - to predict one or more independent variables (e.g., pricing, promotion efforts) on a dependent variable (e.g., sales revenue, market share etc).
+   - Cluster Analysis - to group competitors based on similar attributes such as market segments, product features or customer demographics.
+   - Trend Analysis - to assess sales growth rates, market share changes etc to identify emerging trends and opportunities.
+   - SWOT Analysis -  to systematically evaluate internal and external factors affecting competitiveness.
 
 ## References:
 
