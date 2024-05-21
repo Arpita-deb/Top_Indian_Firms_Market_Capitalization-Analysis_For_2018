@@ -31,14 +31,13 @@ This repository contains all the data and information about the 2 projects that 
   - Datasets used
   - Alteryx Workflows
   - Project Report (Presentation)
-  - Tableau Dashboard
+  - Power BI Dashboard
   - GitHub Documentation
 
 ## Tools used:
   - Microsoft Excel - For Initial Data Cleaning (Removing Typographical errors)
   - Alteryx - For Data Preparation, Joining external dataset, Exploratory Data Analysis (EDA)
   - Power BI - For Data Visualization
-  - Tableau - For Dashboard
   - Canva - For Project Report
 
 ## Methodologies used:
@@ -131,15 +130,15 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
 ![A 1 1](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/a9e84719-c9b8-4125-a9f6-9226b5006811)
 
-![A 1 1 2](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/ad8cbd23-eb3a-4677-a859-864b8e04fd44)
+![A 1 1 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/6192bcdf-ef01-4180-a639-cf050450d37c)
 
-![A 1 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/63cecb61-ff01-4d53-a647-f1166f853e43)
+![A 1 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/8ffb3a6a-a705-4d2c-b4a6-1e53ac0f550d)
 
 ![1 3](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/125925df-11bb-49fc-a15b-21b1559fce3e)
 
-![A1 4](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/b4928239-3907-4468-9c54-c897bb006937)
+![A 1 4](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/46f566b5-1c47-4b7f-86ae-3e8fb579c44b)
 
-![A 1 5](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/64f72ae4-4045-4243-84e2-7ab16afe3329)
+![A 1 5](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/87f14a4f-e148-4221-be18-4f6427da592c)
 
 ![A 1 6](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/31e28f34-6494-40ca-bb44-9608329fe3b4)
 
@@ -155,32 +154,32 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
 ![A 1 10 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/aba5bdd1-d784-4587-9a36-4eced5fb188e)
 
-![A 1 10 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/e229207d-eeec-483a-8df6-acbe7752c8ee)
+![A 1 10 2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/a38c4847-f765-4f6c-b7cc-96600a11ed9b)
 
 * **Summary of Exploratory Data Analysis:**
 
 1. The analysis reveals outliers in Quarterly Sales and Market Capitalization among 487 companies. The median market cap is ₹28,784 crore, with the highest at ₹5,83,436 crore, indicating significant variance. The top three companies by market cap in 2018 were *Reliance Industries, Tata Consultancy Services*, and *HDFC Bank*, holding market shares of 32.85%, 31.74%, and 27.19%, respectively.
 
-![2](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/d970ea44-85e6-493e-9067-7df69c05189b)
+![Top 15 companies](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/e604815e-a27f-4ca8-bf9e-d5edc870ee3f)
 
 2. The *IT, Energy*, and *Automobile* sectors led in Average Market Capitalization, while the Energy, Metals, and Automobile sectors topped Average Quarterly Sales. Notable outliers included Reliance Industries from Energy and Tata Consultancy Services from IT.
 
-![1](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/60a3da89-95fd-49cd-92e6-681aa9d40564)
+![Industries](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/19d28b41-d60c-41b8-a4f2-630f6d753c1c)
 
 3. Market capitalization correlated moderately with sales, with a coefficient of 0.5868. Companies were classified into large (market cap > ₹28,000 crore), mid (market cap between ₹8,000 crore and ₹28,000 crore), and small (market cap < ₹8,000 crore) categories, with small caps being the majority.
 
-![3](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/82e67535-11ac-47e5-827b-0d0b497551c2)
+![donut](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/03865a68-a000-46e8-9af1-6dbf86fcd3eb)
 
 4. A Further breakdown of total Market Share by industries and categories reveal that the top performing industries were dominated by Large Cap Companies, which also answers their high market share. However, there are some emerging industries dominated by Mid and Small Cap companies which reveals potential for these small and mid cap companies to emerge and thrive.
 
-![4](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/d8b48a8a-6ab2-4cb5-937c-ea143f0e23f4)
+![stack](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/9a9b0f2d-f339-4641-bf67-f1311013251c)
 
 5. A scatterplot comparing Quarterly Sales and Market Cap ranks showed minimal positive correlation, with only 31 companies ranking under 50 in both categories. This gets more complicated as we've ranked the companies in descending order of their market cap and sales, which means companies ranking higher in market cap (i.e. closer to 1) also have a higher sales rank (i.e. closer to 1). This means that as the rank of a company by market cap increases there tends to be a tendency for its rank by quarterly sales to also increase.
 
 However, correlation does not imply causation. This means that while there is a relationship between market cap ranks and quarterly sales ranks, it doesn't necessarily mean that one directly causes another. Other factors could influence both market cap and sales independently.
 
-![5](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/ae636043-4790-4f3d-b919-277c86ae707f)
-  
+![scatter](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/650a61f2-9f75-4dd7-b9c5-6318a1766e84)  
+
 ## Interpretation of Results:
 1. **Market Capitalization Metrics:**
    - **Importance:** Market capitalization is a crucial metric for assessing a company's competitiveness.
