@@ -162,7 +162,7 @@ To address the third issue, I used another external dataset names 'NIFTY 500' fr
 
 ![Top 15 companies](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/e604815e-a27f-4ca8-bf9e-d5edc870ee3f)
 
-2. The *IT, Energy*, and *Automobile* sectors led in Average Market Capitalization, while the Energy, Metals, and Automobile sectors topped Average Quarterly Sales. Notable outliers included Reliance Industries from Energy and Tata Consultancy Services from IT.
+2. The *IT, Energy*, and *Metals* sectors led in Average Market Capitalization. Notable outliers included Reliance Industries from Energy and Tata Consultancy Services from IT.
 
 ![Industries](https://github.com/Arpita-deb/Unified-Mentor-Internship-Project-Works/assets/139372731/19d28b41-d60c-41b8-a4f2-630f6d753c1c)
 
@@ -182,24 +182,16 @@ However, correlation does not imply causation. This means that while there is a 
 
 ## Interpretation of Results:
 1. **Market Capitalization Metrics:**
-   - **Importance:** Market capitalization is a crucial metric for assessing a company's competitiveness.
-   - **Categorization:** We grouped companies into three distinct categories based on their market cap.
-   - **Large Cap Companies:** Approximately 21% of all companies fall into this category, with a market cap exceeding ₹28,000 Crore INR.
-   - **Notable Players:** Reliance Industries Ltd, Tata Consultancy Limited, and HDFC Bank lead the way, generating over ₹16,00,000 Crore in market capitalization.
-   - **Competitiveness Indicator:** Larger market caps often indicate a company's ability to influence the market, attract investors, and fund operations.
+   - Market capitalization is a crucial metric for assessing a company's competitiveness. We grouped companies into three distinct categories based on their market cap. Approximately 21% of all companies fall into large cap category, with a market cap exceeding ₹28,000 Crore INR. Reliance Industries Ltd, Tata Consultancy Limited, and HDFC Bank lead the way, generating over ₹16,00,000 Crore in market capitalization. Larger market caps often indicate a company's ability to influence the market, attract investors, and fund operations.
 
 2. **Market Share Insights:**
-   - **Leadership Indicators:** In the Indian business landscape of 2018, companies like Reliance Ltd and Tata Consultancy Group held significant market share.
-   - **Market Dominance:** High market share suggests market leadership, a strong brand, and considerable influence over prices and trends.
-   - **Competitiveness Spectrum:** Markets with a few dominant players are less competitive, while those with many smaller players are more competitive.
+   - In the Indian business landscape of 2018, companies like Reliance Ltd and Tata Consultancy Group held significant market share. High market share suggests market leadership, a strong brand, and considerable influence over prices and trends. Markets with a few dominant players are less competitive, while those with many smaller players are more competitive.
 
 3. **Industry-Specific Analysis:**
-   - **Top Performers:** In 2018, IT, Energy, Automobile, Metal, Telecom, and Logistics industries stood out.
-   - **Market Cap Breakdown:** These sectors were predominantly monopolized by large and mid-cap companies.
+   - In 2018, IT, Energy, Automobile, Metal, Telecom, and Logistics industries stood out. These sectors were predominantly monopolized by large and mid-cap companies.
 
 4. **Emerging Small Caps:**
-   - **Fast Risers:** Despite the dominance of large and mid-cap companies, 46% of analyzed firms were Small Caps.
-   - **Untapped Potential:** Industries like Agriculture, Paper, Healthcare, Textile, Services, Construction, and Chemicals show promising growth.
+   - Despite the dominance of large and mid-cap companies, 46% of analyzed firms were Small Caps. Industries like Agriculture, Paper, Healthcare, Textile, Services, Construction, and Chemicals show promising growth.
 
 ## Limitations of the project:
 
