@@ -1,7 +1,7 @@
-# Unified Mentor Internship Project 1: Financial Analytics
+# Charting Progress: An examination of Market Capitalization in the Indian Corporate landscape in 2018
+## Unified Mentor Internship Project 1: Financial Analytics
 
 # About the Internship:
-This repository contains all the data and information about the 2 projects that I completed as an intern in Unified Mentor from 10-05-2024 to 10-06-2024.
 
 * Organization: Unified Mentor
 * Role: Data Analyst Intern
