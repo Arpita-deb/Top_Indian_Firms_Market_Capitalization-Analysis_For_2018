@@ -233,3 +233,7 @@ However, correlation does not imply causation. This means that while there is a 
 * [Market Capitalization - Basics, Definition, How to Calculate](https://groww.in/p/market-capitalisation)
 * [Market Capitalization Basics: Large cap, Mid cap & Small cap companies](https://tradebrains.in/market-capitalization-in-indian-stock-market/)
 * [Market Cap To Sales Ratio: Why It's Important? - StockEdge Blog](https://blog.stockedge.com/market-cap-to-sales-ratio/)
+
+## Appendix:
+
+* [Alteryx: Simplifying Data Workflows and Analytics - Medium Article](https://medium.com/@arpita_deb/alteryx-simplifying-data-workflows-and-analytics-6a22de0c16c0)
