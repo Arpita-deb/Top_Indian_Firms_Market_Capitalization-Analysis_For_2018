@@ -20,8 +20,6 @@
  - To ensure business sustainability and growth, it is imperative to conduct a thorough analysis of market competition. This assignment involves examining the competitive landscape to enhance the strategic positioning and performance.
    Using data about market capitalization details of India’s top 500 firms for FY 2018, I have to derive insights that can inform management decisions. My toolkit includes Excel, Alteryx, Power BI, Google Slides, and Canva. Market Capitalization served as my primary metric to gauge corporate competitiveness. I’ve also discussed the project’s limitations and proposed some future directions.
 
-   The Project Report is available here [Financial Analysis Report Presentation PDF](https://github.com/user-attachments/files/15572726/Financial.Analysis.Report.Presentation.pdf).
-
 ## Domain: 
  - Finance
 
